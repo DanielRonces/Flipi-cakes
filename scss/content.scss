@@ -1,0 +1,59 @@
+.principal{
+    h1{
+       @include texts($textXl,$fontMain,rgb(5, 41, 247),center,1em);
+    }
+
+    h2{
+        @include texts($textMd,$fontSecondary,rgb(5, 41, 247),center,1em);
+    }
+
+    p{
+        @include texts($textSm,$fontSecondary,rgb(0,0,0),center,1em);
+    }
+
+    nav{
+        a{
+            @include texts($textMd,$fontSecondary,white,center,1em);
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: linear-gradient(rgb(36, 67, 242),rgb(22, 16, 114));
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5%;
+            p{
+                @include texts($textSm,$fontSecondary,rgb(0,0,0),center,0.2em); 
+            }
+        }
+    }
+
+    h3{
+        @include texts($textMd,$fontSecondary,rgb(196, 236, 15),center,0.7em); 
+    }
+
+    img{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 1em auto;
+        height: 12em;
+    }
+
+    a{
+        @include texts($textMd,$fontSecondary,white,center,0.5em);
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: linear-gradient(rgb(190, 231, 4),rgb(202, 214, 25));
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5%;
+            p{
+                @include texts($textSm,$fontSecondary,rgb(0,0,0),center,0.2em); 
+            }
+    }
+}
